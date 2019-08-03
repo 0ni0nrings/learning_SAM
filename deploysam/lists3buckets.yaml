@@ -16,7 +16,7 @@ Resources:
       Description: SAM demo for listing s3 buckets
       Role:
         Fn::ImportValue: SAMIamRole
-      CodeUri: s3://samdeploy-nonprod/5234885655f334edf95d2c4de82df4cc
+      CodeUri: s3://samdeploy-nonprod/4630e62e3706e1e6d4cf62103afcfbfa
       Handler: main.lambda_handler
       Runtime: python3.7
       Events:

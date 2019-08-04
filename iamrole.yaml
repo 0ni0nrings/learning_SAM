@@ -16,12 +16,12 @@ Resources:
         Version: 2012-10-17
       ManagedPolicyArns:
         - arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole
-        #- arn:aws:iam::aws:policy/AWSLambdaExecute
+        # - arn:aws:iam::aws:policy/AmazonS3ReadOnlyAccess
       Path: /
 
 Outputs:
-SAMIamRole:
+  SAMIamRole:
     Description: "Implicit IAM Role created for SAM functions"
-    Value: !Ref SAMRole
+    Value: !GetAtt SAMRole.Arn
     Export:
-      Name: !GetAtt SAMRole.Arn
+      Name: SAMIamRole

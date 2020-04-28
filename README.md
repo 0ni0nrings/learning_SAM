@@ -1,2 +1,2 @@
 # learning_SAM
-Repo for SAM templates
+Repo for SAM learning templates
